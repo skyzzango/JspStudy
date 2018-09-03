@@ -1,3 +1,36 @@
+create table "STUDENT" (
+	"NUM" number(2,0) not null,
+	"NAME" varchar2(20) not null,
+	"KOR" number(3,0) not null,
+	"ENG" number(3,0) not null,
+	"MAT" number(3,0) not null,
+	"TOTAL" number(3,0) not null,
+	"AVG" number(5,2) not null,
+	constraint "STUDENT_PK" primary key ("NUM"));
+
+create table "STUDENT" (
+	"NUM" number primary key,
+	"NAME" varchar2(20) not null,
+	"PHOEN" varchar2(20) not null,
+	"EMAIL" varchar2(30) not null,
+	"ADDRESS" varchar2(100) not null,
+	"REG_DATE" date not null);
+
+create sequence SEQ_STUDENT;
+
+update STUDENT set NAME = ?, PHONE = ?, EMAIL = ?, ADDRESS = ? where NUM = ?
+
+[START WITH n]
+
+[INCREMENT BY n]
+
+[MAXVALUE n | NOMAXVALUE]
+
+[MINVALUE n | NOMINVALUE]
+
+[CYCLE | NOCYCLE]
+
+
 create table "DEPARTMENT" (
 	"DEPTNO" number(3,0) not null,
 	"DNAME" varchar2(30) not null,

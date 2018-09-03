@@ -1,4 +1,4 @@
-package dbtest;
+package db_ex01;
 
 import java.io.FileInputStream;
 import java.io.IOException;

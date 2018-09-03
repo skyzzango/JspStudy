@@ -1,4 +1,4 @@
-package dbtest;
+package db_ex01;
 
 import java.sql.*;
 

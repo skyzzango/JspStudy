@@ -1,4 +1,4 @@
-package dbtest;
+package db_ex01;
 
 public class DB_Ex06 {
 	public static void main(String[] args) {
