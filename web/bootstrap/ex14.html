@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>BootStrap Example</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/static/css/font.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+	<h2>Basic Progress Bar</h2>
+	<p>To create a default progress bar, add a .progress class to a container element and add the progress-bar class to its child element. Use the CSS width property to set the width of the progress bar:</p>
+	<div class="progress">
+		<div class="progress-bar" style="width: 70%"></div>
+	</div>
+</div>
+<br/>
+<div class="container">
+	<h2>Height Progress Bar</h2>
+	<div class="progress" style="height: 10px">
+		<div class="progress-bar" style="width: 40%; height: 10px;"></div>
+	</div>
+	<br/>
+	<div class="progress" style="height: 20px">
+		<div class="progress-bar" style="width: 50%; height: 20px;"></div>
+	</div>
+	<br/>
+	<div class="progress" style="height: 30px">
+		<div class="progress-bar" style="width: 60%; height: 30px;"></div>
+	</div>
+</div>
+<br/>
+<div class="container" >
+	<h2>Progress Bar With Label</h2>
+	<div class="progress" style="height: 20px">
+		<div class="progress-bar" style="width: 70%; height: 20px">70%</div>
+	</div>
+</div>
+<br/>
+<div class="container">
+	<h2>Color Progress Bar</h2>
+	<!--Blue (기본값)-->
+	<div class="progress">
+		<div class="progress-bar" style="width: 10%;"></div>
+	</div>
+	<br/>
+
+	<!--초록계열 배경-->
+	<div class="progress">
+		<div class="progress-bar bg-success" style="width: 20%;"></div>
+	</div>
+	<br/>
+
+	<!--하늘색계열 배경-->
+	<div class="progress">
+		<div class="progress-bar bg-info" style="width: 30%;"></div>
+	</div>
+	<br/>
+
+	<!--오렌지색 계열-->
+	<div class="progress">
+		<div class="progress-bar bg-warning" style="width: 40%;"></div>
+	</div>
+	<br/>
+
+	<!--빨강색 계열-->
+	<div class="progress">
+		<div class="progress-bar bg-danger" style="width: 50%;"></div>
+	</div>
+	<br/>
+
+	<!--흰색 계열-->
+	<div class="progress">
+		<div class="progress-bar bg-white" style="width: 60%;"></div>
+	</div>
+	<br/>
+
+	<!--회색 계열-->
+	<div class="progress">
+		<div class="progress-bar bg-secondary" style="width: 70%;"></div>
+	</div>
+	<br/>
+
+	<!--밝은 회색 계열-->
+	<div class="progress">
+		<div class="progress-bar bg-light" style="width: 80%;"></div>
+	</div>
+	<br/>
+
+	<!--어두운 회색 계열-->
+	<div class="progress">
+		<div class="progress-bar bg-dark" style="width: 90%;"></div>
+	</div>
+	<br/>
+</div>
+<br/>
+<div class="container">
+	<h2>Color Strip Progress Bar</h2>
+	<!--Blue (기본값)-->
+	<div class="progress">
+		<div class="progress-bar progress-bar-striped" style="width: 10%;"></div>
+	</div>
+	<br/>
+
+	<!--초록계열 배경-->
+	<div class="progress">
+		<div class="progress-bar progress-bar-striped bg-success" style="width: 20%;"></div>
+	</div>
+	<br/>
+
+	<!--하늘색계열 배경-->
+	<div class="progress">
+		<div class="progress-bar progress-bar-striped bg-info" style="width: 30%;"></div>
+	</div>
+	<br/>
+
+	<!--오렌지색 계열-->
+	<div class="progress">
+		<div class="progress-bar progress-bar-striped bg-warning" style="width: 40%;"></div>
+	</div>
+	<br/>
+
+	<!--빨강색 계열-->
+	<div class="progress">
+		<div class="progress-bar progress-bar-striped bg-danger" style="width: 50%;"></div>
+	</div>
+	<br/>
+
+	<!--흰색 계열-->
+	<div class="progress">
+		<div class="progress-bar progress-bar-striped bg-white" style="width: 60%;"></div>
+	</div>
+	<br/>
+
+	<!--회색 계열-->
+	<div class="progress">
+		<div class="progress-bar progress-bar-striped bg-secondary" style="width: 70%;"></div>
+	</div>
+	<br/>
+
+	<!--밝은 회색 계열-->
+	<div class="progress">
+		<div class="progress-bar progress-bar-striped bg-light" style="width: 80%;"></div>
+	</div>
+	<br/>
+
+	<!--어두운 회색 계열-->
+	<div class="progress">
+		<div class="progress-bar progress-bar-striped bg-dark" style="width: 90%;"></div>
+	</div>
+	<br/>
+</div>
+<br/>
+<div class="container">
+	<h2>Animate Progress Bar</h2>
+	<div class="progress">
+		<div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 40%"></div>
+	</div>
+</div>
+<br/>
+<div class="container">
+	<h2>Multiple Color Progress Bar</h2>
+	<div class="progress">
+		<div class="progress-bar bg-success" style="width: 40%;">
+			Free Space
+		</div>
+		<div class="progress-bar bg-warning" style="width: 10%;">
+			Warning
+		</div>
+		<div class="progress-bar bg-danger" style="width: 20%;">
+			Danger
+		</div>
+	</div>
+</div>
+<br/>
+</body>
+</html>

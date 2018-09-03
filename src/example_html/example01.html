@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>로그인</title>
+	<script>
+		var winobject = null;
+		function openWin() {
+			winobject = window.open('','','')
+		}
+		function closeWin() {
+			winobject.focus();
+			if(winobject == null) {
+				alert("There is no object!");
+
+			} else
+				winobject.close()
+		}
+		function writeWin() {
+			if(winobject == null) return;
+			winobject.document.open();
+			winobject.document.write("<html>");
+			winobject.document.write("<head>");
+			winobject.document.write("<title>New Window</title>");
+			winobject.document.write("</head>");
+			winobject.document.write("<body>");
+			winobject.document.write("<center>");
+			winobject.document.write("글이 입력되었습니다.");
+			winobject.document.write("</center>");
+			winobject.document.write("</body>");
+			winobject.document.write("</html>");
+			winobject.document.close();
+			winobject.focus()
+		}
+		function clearWin() {
+			if(winobject == null) return;
+			winobject.document.open();
+			winobject.document.write("");
+			winobject.document.close();
+			winobject.focus()
+		}
+	</script>
+</head>
+<body>
+<span style="font-size: x-small; ">
+	왼쪽 부터 오른쪽으로 차례로 눌러보세요!<br>
+	window 객체의 open 메소드를 이용해서 창을 열고<br>
+	document 객체의 open 메소드를 이용해서 새 창에 글을 적고<br>
+	document 객체의 close 메소드를 이용해서 창에 있는 글을 지우고<br>
+	window 객체의 close 메소드를 이용해서 창을 닫아요..<p>
+	<form>
+		<input type="button" value="OPEN WINDOW"
+		       onClick="openWin();">
+		<input type="button" value="WRITE WINDOW"
+		       onClick="writeWin();">
+		<input type="button" value="CLEAR WINDOW"
+		       onClick="clearWin();">
+		<input type="button" value="CLOSE WINDOW"
+		       onClick="closeWin();">
+	</form>
+</span>
+</body>
+</html>

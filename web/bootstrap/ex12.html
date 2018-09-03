@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>BootStrap Example</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/static/css/font.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+	<h2>Nesting Button Group</h2>
+	<p>Nest button groups to create dropdown menus:</p>
+	<div class="btn-group">
+		<button type="button" class="btn btn-primary">애플</button>
+		<button type="button" class="btn btn-primary">삼성</button>
+		<nav class="btn-group">
+			<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+				소니
+			</button>
+			<div class="dropdown-menu">
+				<button class="dropdown-item" href="#">Tablet</button>
+				<a class="dropdown-item" href="#">SmartPhone</a>
+			</div>
+		</nav>
+	</div>
+</div>
+<br/>
+<div class="container">
+	<h2>Split Buttons</h2>
+	<div class="btn-group">
+		<button type="button" class="btn btn-primary">소니</button>
+		<button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"></button>
+		<div class="dropdown-menu">
+			<a class="dropdown-item" href="#">태블릿</a>
+			<a class="dropdown-item" href="#">스마트폰</a>
+		</div>
+	</div>
+</div>
+<br/>
+<div class="container">
+	<h2>Button Group</h2>
+	<p>The btn-group class creates a button group:</p>
+	<div class="btn-group">
+		<button type="button" class="btn btn-primary">애플</button>
+		<button type="button" class="btn btn-primary">삼성</button>
+		<button type="button" class="btn btn-primary">소니</button>
+	</div>
+</div>
+<br/>
+<div class="container">
+	<h2>Button Group Sizes</h2>
+	<p>Add class btn-group-* to size all buttons in a button group.</p>
+	<h3>Large Button:</h3>
+	<div class="btn-group btn-group-lg">
+		<button type="button" class="btn btn-primary">애플</button>
+		<button type="button" class="btn btn-primary">삼성</button>
+		<button type="button" class="btn btn-primary">소니</button>
+	</div>
+	<br/>
+	<h3>Default Button:</h3>
+	<div class="btn-group btn-group">
+		<button type="button" class="btn btn-primary">애플</button>
+		<button type="button" class="btn btn-primary">삼성</button>
+		<button type="button" class="btn btn-primary">소니</button>
+	</div>
+	<br/>
+	<h3>Small Button:</h3>
+	<div class="btn-group btn-group-sm">
+		<button type="button" class="btn btn-primary">애플</button>
+		<button type="button" class="btn btn-primary">삼성</button>
+		<button type="button" class="btn btn-primary">소니</button>
+	</div>
+</div>
+<br/>
+<div class="container">
+	<h2>Vertical Button Group</h2>
+	<p>Use the btn-group-vertical class to create a vertical button group:</p>
+	<div class="btn-group-vertical">
+		<button type="button" class="btn btn-primary">애플</button>
+		<button type="button" class="btn btn-primary">삼성</button>
+		<button type="button" class="btn btn-primary">소니</button>
+	</div>
+</div>
+<br/>
+</body>
+</html>

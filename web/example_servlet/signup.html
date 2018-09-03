@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>회원가입</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/static/css/font.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="form-group">
+	<label for="user_id">이름</label>
+	<input type="text"
+	       class="form-control" name="user_id" id="user_id" aria-describedby="id-help" placeholder="이름">
+	<small id="id-help" class="form-text text-muted">Help text</small>
+	<br/>
+	<label for="user_pw">비밀번호</label>
+	<input type="password"
+	       class="form-control" name="user_pw" id="user_pw" aria-describedby="pw-help" placeholder="비밀번호">
+	<br/>
+	<label for="user_pw2">비밀번호 확인</label>
+	<input type="password"
+	       class="form-control" name="user_pw2" id="user_pw2" aria-describedby="pw2-help" placeholder="비밀번호 확인">
+	<small id="pw2-help" class="form-text text-muted">Help text</small>
+	<br/>
+	<label for="user_email">이메일</label>
+	<input type="email"
+	       class="form-control" name="user_email" id="user_email" aria-describedby="email-help"
+	       placeholder="이메일 주소">
+	<small id="email-help" class="form-text text-muted">Help text</small>
+	<br/>
+	<label for="user_tel">전화번호</label>
+	<input type="tel"
+	       class="form-control" name="user_tel" id="user_tel" aria-describedby="tel-help" placeholder="전화번호">
+	<small id="tel-help" class="form-text text-muted">Help text</small>
+	<br/>
+	<label for="user_url">홈페이지</label>
+	<input type="url"
+	       class="form-control" name="user_url" id="user_url" aria-describedby="url-help" placeholder="홈페이지">
+	<small id="url-help" class="form-text text-muted">Help text</small>
+	<br/>
+
+</div>
+</body>
+</html>

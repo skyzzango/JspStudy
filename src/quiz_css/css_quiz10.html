@@ -1,0 +1,199 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>드롭다운 메뉴</title>
+	<style>
+		/*================================================
+                    Body
+        ================================================*/
+		body {
+			margin: 0;
+			background-color: antiquewhite;
+		}
+
+		/*================================================
+							Header
+		  ================================================*/
+		nav {
+			position: fixed;
+			top: 0;
+			width: 100%;
+			background-color: white;
+		}
+
+		nav ul {
+			/*목차 표시 없앰*/
+			list-style: none;
+			overflow: hidden;
+			margin: 0;
+			padding: 10px;
+			background-color: rosybrown;
+		}
+
+		nav ul li {
+			/*메뉴간 간격을 없앰*/
+			float: left;
+		}
+
+		nav ul li a {
+			/*링크 밑줄 없앰*/
+			text-decoration: none;
+
+			/*height 조정가능하도록*/
+			display: block;
+
+			padding: 10px 15px;
+			line-height: 20px;
+			border-radius: 50px;
+
+			color: #ffffff;
+		}
+
+		/* 일반메뉴 hover */
+		nav ul li a:hover {
+			color: saddlebrown;
+			background-color: #ffffff;
+		}
+
+		/* 서브메뉴 */
+		.dropdown-sub {
+			display: none;
+			position: absolute;
+			background-color: #ffffff;
+			box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2);
+			border-radius: 5px;
+		}
+
+		.dropdown-sub a {
+			font-size: 0.9rem;
+			color: rosybrown;
+		}
+
+		/* dropdown 메뉴 hover */
+		.dropdown:hover .dropdown-sub {
+			display: block;
+		}
+
+		.dropdown:hover .drop {
+			color: saddlebrown;
+			background-color: #ffffff;
+		}
+
+		/* 서브메뉴 hover */
+		.dropdown-sub a:hover {
+			/*링크 밑줄 없앰*/
+			text-decoration: none;
+
+			/*height 조정가능하도록*/
+			display: block;
+
+			padding: 10px 15px;
+			line-height: 20px;
+			border-radius: 5px;
+
+			color: #ffffff;;
+			background-color: rosybrown;
+		}
+
+		/*================================================
+							Main
+		  ================================================*/
+		main {
+			height: 100%;
+			margin-top: 40px;
+			padding: 10px 20px;
+
+			color: saddlebrown;
+			background-color: #ffffff;
+		}
+
+		/*================================================
+							Footer
+		  ================================================*/
+
+		footer {
+			position: fixed;
+			width: 100%;
+			bottom: 0;
+			color: aliceblue;
+			background-color: rosybrown;
+		}
+	</style>
+</head>
+
+<body>
+<header>
+	<nav>
+		<ul>
+			<li><a href="#"> 처음으로 </a></li>
+			<li class="dropdown">
+				<a href="#" class="drop"> 요안도라 안내 </a>
+				<div class="dropdown-sub">
+					<a href="#">소개합니다.</a>
+					<a href="#">오시는 길</a>
+				</div>
+			</li>
+			<li class="dropdown">
+				<a href="#" class="drop"> 이용 방법 </a>
+				<div class="dropdown-sub">
+					<a href="#"> 객실 둘러보기</a>
+					<a href="#"> 요금 안내 </a>
+					<a href="#"> 예약 방법 </a>
+					<a href="#"> 예약 게시판</a>
+				</div>
+			</li>
+			<li class="dropdown">
+				<a href="#" class="drop"> 게시판 </a>
+				<div class="dropdown-sub">
+					<a href="#"> 공지사항 </a>
+					<a href="#"> 묻고 답하고</a>
+				</div>
+			</li>
+			<li><a href="#"> 프로필</a></li>
+		</ul>
+	</nav>
+</header>
+<main>
+	<h1>Dropdown Top Navigation Bar</h1>
+
+	<p>Some text some text some text some text..</p>
+	<p>Some text some text some text some text..</p>
+	<p>Some text some text some text some text..</p>
+	<p>Some text some text some text some text..</p>
+	<p>Some text some text some text some text..</p>
+	<p>Some text some text some text some text..</p>
+	<p>Some text some text some text some text..</p>
+	<p>Some text some text some text some text..</p>
+	<p>Some text some text some text some text..</p>
+	<p>Some text some text some text some text..</p>
+	<p>Some text some text some text some text..</p>
+	<p>Some text some text some text some text..</p>
+	<p>Some text some text some text some text..</p>
+	<p>Some text some text some text some text..</p>
+	<p>Some text some text some text some text..</p>
+	<p>Some text some text some text some text..</p>
+	<p>Some text some text some text some text..</p>
+	<p>Some text some text some text some text..</p>
+	<p>Some text some text some text some text..</p>
+	<p>Some text some text some text some text..</p>
+	<p>Some text some text some text some text..</p>
+	<p>Some text some text some text some text..</p>
+	<p>Some text some text some text some text..</p>
+	<p>Some text some text some text some text..</p>
+	<p>Some text some text some text some text..</p>
+	<p>Some text some text some text some text..</p>
+	<p>Some text some text some text some text..</p>
+	<p>Some text some text some text some text..</p>
+	<p>Some text some text some text some text..</p>
+	<p>Some text some text some text some text..</p>
+	<p>Some text some text some text some text..</p>
+	<p>Some text some text some text some text..</p>
+	<p>2222222222222222222222222</p>
+	<p>EndEndEndEndEnd</p>
+</main>
+<footer>
+	footer
+</footer>
+</body>
+</html>
