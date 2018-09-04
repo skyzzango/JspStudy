@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<context>
+	<Resource name="jdbc/MyH2"
+	          auth="Container"
+	          driverClassName="org.h2.Driver"
+	          type="javax.sql.DataSource"
+	          url="jdbc:h2:C:/Users/skyzz/IdeaProjects/JspStudy/src/db_ex02/h2"
+	          username="iu"
+	          password="iu1004"
+	          initialSize="50"
+	          maxTotal="20"
+	          maxIdle="10"
+	          maxWaitMillis="10000"/>
+	<!--
+	initialSize : 최초 시점에 getConnection() 을 통해 컨넥션 풀에 채워 넣을 컨넥션 개수 ( default = 0 )
+	maxTotal : 동시에 사용할 수 있는 최대 컨넥션 개수 ( default = 8 )
+	maxIdle : Connection Pool 에 반납할 때 최초로 유지될 수 있는 컨넥션 개수 ( default = 8 )
+	minIdle : 최소한으로 유지할 컨넥션 개수 ( default = 0 )
+	maxWaitMillis : pool 이 고갈되었을 경우 최대 대기 시간 ( ms 단위, default = -1 = 무한정 )
+	-->
+</context>

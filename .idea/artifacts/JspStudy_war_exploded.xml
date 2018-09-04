@@ -8,7 +8,10 @@
           <element id="module-output" name="JspStudy" />
         </element>
         <element id="directory" name="lib">
-          <element id="library" level="project" name="ojdbc6_2.0.4(web)" />
+          <element id="file-copy" path="$PROJECT_DIR$/web/lib/ojdbc6_2.0.4.jar" />
+          <element id="library" level="project" name="h2-1.4.196" />
+          <element id="library" level="project" name="sqlite-jdbc-3.20.1.1" />
+          <element id="library" level="project" name="tomcat-dbcp" />
         </element>
       </element>
     </root>
