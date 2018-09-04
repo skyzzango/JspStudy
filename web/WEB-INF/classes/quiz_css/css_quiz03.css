@@ -1,0 +1,26 @@
+﻿#container1 {
+	background: linear-gradient(to left, navy, #CCC 50%, navy);
+	width: 300px;
+	border: 1px solid black;
+	border-radius: 10px;
+	margin: 20px auto;
+	padding: 10px;
+	color: white;
+}
+
+#container2 {
+	background: linear-gradient(to top, skyblue, white);
+	width: 300px;
+	border: 1px solid black;
+	border-radius: 10px;
+	margin: 20px auto;
+	padding: 10px;
+}
+
+#back {
+	background: url("css_quiz03_coffee.png") no-repeat left bottom;
+	width: 520px;
+	height: 410px;
+	margin: 20px auto;
+	padding: 10px;
+}
