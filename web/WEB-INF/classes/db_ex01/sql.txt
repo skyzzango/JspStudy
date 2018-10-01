@@ -1,0 +1,60 @@
+create table "DEPARTMENT" (
+	"DEPTNO" number(3,0) not null,
+	"DNAME" varchar2(30) not null,
+	"COLLEGE" number(3,0) not null,
+	"LOC" varchar2(10) not null,
+	constraint "DEPARTMENT_PK" primary key ("DEPTNO"))
+
+create table "PROFESSOR" (
+	"PROFNO" number(5,0) not null,
+	"NAME" varchar2(10) not null,
+	"ENAME" varchar2(20) not null,
+	"POSITION" varchar2(20) not null,
+	"SAL" number(4,0) not null,
+	"HIREDATE" date not null,
+	"AGE" number(3,0) not null,
+	"DEPTNO" number(3,0) not null,
+	constraint "PROFESSOR_PK" primary key ("PROFNO"))
+
+alter table "PROFESSOR" add constraint "PROFESSOR_FK"
+	foreign key ("DEPTNO")
+	references "DEPARTMENT" ("DEPTNO")
+
+Ex00
+create table "DEPARTMENT" ( "DEPTNO" number(3,0) not null, "DNAME" varchar2(30) not null, "COLLEGE" number(3,0) not null, "LOC" varchar2(10) not null, constraint "DEPARTMENT_PK" primary key ("DEPTNO") )
+
+Ex01
+insert into DEPARTMENT valuse (
+	203, '제어계측공학과', 200, '7호관')
+
+Ex02
+update DEPARTMENT set DNAME = '전자계산학과' where DEPTNO = 203
+
+Ex03
+delete DEPARTMENT where DNAME = '전자계산학과'
+
+Ex04
+select DEPTNO, DNAME, COLLEGE, loc from DEPARTMENT
+
+Ex05
+insert into PROFESSOR values (?, ?, ?, ?, ?, sysdate, ?, ?)
+
+Ex06
+update PROFESSOR set SAL = ? where name = ?
+
+Ex07
+select a.NAME, a.PROFNO, a.POSITION, b.DNAME
+	from PROFESSOR a, DEPARTMENT b
+	where a.DEPTNO = b.DEPTNO
+	and a.DEPTNO = ?
+Ex08
+insert into DEPARTMENT values (?, ?, ?, ?)
+update DEPARTMENT set DNAME = ?, LOC = ? where DEPTNO = ?
+
+insert into DEPARTMENT valuse (
+	"+DEPTNO+",
+	'"+DNAME+"',
+	"+COLLEGE+",
+	'"+LOC+"')
+
+String sql = "INSERT INTO DEPARTMENT VALUES ("+DEPTNO+", '" + DNAME + "', " + COLLEGE + ", '" + LOC + "')";

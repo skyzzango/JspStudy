@@ -8,7 +8,11 @@
 <%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" %>
 <html lang="ko">
 <head>
+<<<<<<< HEAD
     <%@include file="../partials/head.html" %>
+=======
+	<%@include file="../partials/head.html" %>
+>>>>>>> origin/master
     <title>#[[$Title$]]#</title>
 </head>
 <body>
